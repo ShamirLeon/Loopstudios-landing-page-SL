@@ -1,0 +1,76 @@
+@use 'variables';
+
+.interactive{
+    margin-bottom: 80px;
+    position: relative;
+
+    &__picture{
+        width: 100%;
+        margin: 80px auto 0;
+
+        @media #{variables.$First-Breakpoint}{
+            background-image: url(/images/desktop/image-interactive.jpg);
+            background-repeat: no-repeat;
+            // width: 50%;
+            height: 500px;
+            margin: 75px 0 0 75px;
+            z-index: 1;
+            padding: 0;
+        }
+    }
+
+    &__img{
+        width: 100%;
+        max-width: 600px;
+
+        @media #{variables.$First-Breakpoint} {
+            display: none;
+        }
+    }
+
+    &__texts{
+        width: 100%;
+
+        @media #{variables.$First-Breakpoint}{
+            position: absolute;
+            background-color: variables.$White;
+            right: 0;
+            top: 200px;
+            bottom: 0;
+            width: 50%;
+            height: 300px;
+            padding: 70px;
+            // text-align: left;
+            
+        }
+    }
+
+    &__title{
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+
+        @media #{variables.$First-Breakpoint}{
+            font-size: 60px;
+            text-align: left;
+        }
+    }
+
+    &__paragraph{
+        text-align: center;
+        line-height: 1.7;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        font-family: variables.$font-1;
+        color: variables.$Dark-Gray;
+
+        @media #{variables.$First-Breakpoint}{
+            text-align: left;
+            margin: 0;
+        }
+    }
+
+    
+}

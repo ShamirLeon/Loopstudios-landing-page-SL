@@ -1,0 +1,22 @@
+@use 'variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    font-family:variables.$font-2;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    padding: variables.$padding-container;
+
+    @media #{variables.$First-Breakpoint} {
+        padding: 75px 0;
+    }
+}

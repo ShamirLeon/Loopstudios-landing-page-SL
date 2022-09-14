@@ -1,0 +1,75 @@
+@use 'variables';
+
+.footer{
+    background-color: variables.$Black;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+    padding: 40px 0;
+
+    @media #{variables.$First-Breakpoint} {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 75px;
+    }
+
+    a, h2{
+        text-decoration: none;
+        color: variables.$White;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    h2{
+        color: variables.$Very-Dark-Gray;
+    }
+
+    &__logo{
+        margin-bottom: 30px;
+    }
+
+    &__menu{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+
+        @media #{variables.$First-Breakpoint} {
+            flex-direction: row;
+        }
+    }
+
+    &__section2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media #{variables.$First-Breakpoint} {
+            align-items: flex-end;
+        }
+    }
+
+    &__social{
+        margin-bottom: 30px;
+        a{
+            margin: 0 10px;
+        }
+    }
+}
+
+.attribution{
+    color: white;
+    text-align: center;
+    background-color: black;
+    a{
+        text-decoration: none;
+        color: #547cf4;
+    }
+
+    br{
+        @media #{variables.$First-Breakpoint}{
+
+            display: none;
+        }
+    }
+}
